@@ -7,7 +7,12 @@ from importlib.resources import files
 # === Constants ===
 
 README_PATTERN = re.compile(r"^[A-Za-z]+_[A-Za-z]_m\d+_readme\.txt$")
-REQUIRED_DIRS = ["Build", "Assets", "ProjectSettings", "Packages"]
+REQUIRED_DIRS = [
+    "Build", 
+    "Assets", 
+    "ProjectSettings", 
+    "Packages"
+]
 
 # === Project Validation ===
 
