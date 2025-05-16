@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "cs6457-milestone-packaging"
+version = "0.1.0"
+description = "CLI tool for packaging CS6457 milestones"
+authors = ["Austin <puia.austin@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "cs6457", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.2.0"
+
+[tool.poetry.scripts]
+cs6457 = "cs6457.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
